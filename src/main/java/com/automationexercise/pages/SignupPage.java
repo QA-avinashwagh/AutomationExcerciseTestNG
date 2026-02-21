@@ -26,7 +26,27 @@ public class SignupPage {
     private final By selectMonth = By.id("months");
     private final By selectYear = By.id("years");
 
-    public void SetUserNameAndEmailForSignup(String username, String email){
+    private final By chkBxNewsLetter = By.xpath("//label[normalize-space()='Sign up for our newsletter!']");
+    private final By chxBxOffer = By.xpath("//label[normalize-space()='Receive special offers from our partners!']");
+
+    private final By inpFirstName = By.id("first_name");
+    private final By inpLastName = By.id("last_name");
+    private final By inpCompanyName = By.id("company");
+
+    private final By inpAddress1 = By.id("address1");
+    private final By inpAddress2 = By.id("address2");
+    private final By selectCountry = By.id("country");
+    private final By inpState= By.id("state");
+    private final By inpCity = By.id("city");
+    private final By inpZipcode = By.id("zipcode");
+    private final By inpPhoneNumber = By.id("mobile_number");
+
+    private final By btnCreateAccount = By.xpath("//button[normalize-space()='Create Account']");
+    private final By successMSGCreateAccount = By.xpath("//p[contains(text(),'Congratulations! Your new account has been success')");
+
+
+
+    public void setUserNameAndEmailForSignup(String username, String email){
         actionDriver.waitForPageLoad();
         actionDriver.waitForElementToBeClickable(inpUserName);
         actionDriver.enterText(inpUserName, username);
@@ -56,18 +76,66 @@ public class SignupPage {
         logger.info("Set password on signup field....");
     }
 
-
-    // incomplete method
     public void setDOB(String date, String month, String year){
-
-        WebElement drpDownDate =
-        Select DateSelect = new Select(selectDay.findElement());
-
+        actionDriver.selectByVisibleText(selectDay, date);
+        actionDriver.selectByVisibleText(selectMonth, month);
+        actionDriver.selectByVisibleText(selectYear,year);
     }
 
+    public void clickOnCheckBoxNewsLetter(){
+        actionDriver.waitForElementToBeClickable(chkBxNewsLetter);
+        actionDriver.click(chkBxNewsLetter);
+        logger.info("Click on checkbox for news letter.....");
+    }
 
+    public void clickOnCheckBoxOffer(){
+        actionDriver.waitForElementToBeClickable(chxBxOffer);
+        actionDriver.scrollToElement(chxBxOffer);
+        actionDriver.click(chxBxOffer);
+        logger.info("Click on check box for offers.....");
+    }
 
+    public void setUserDetails(String firstname, String lastName, String companyName){
 
+        actionDriver.scrollToElement(inpFirstName);
+        actionDriver.waitForElementToBeClickable(inpFirstName);
+        actionDriver.waitForElementToBeClickable(inpFirstName);
+        actionDriver.waitForElementToBeClickable(inpCompanyName);
+
+        actionDriver.enterText(inpFirstName, firstname);
+        actionDriver.enterText(inpLastName, lastName);
+        actionDriver.enterText(inpCompanyName, companyName);
+
+        logger.info("User details are set successfully......");
+    }
+
+    public void setUserContactDetails(String address1, String address2, String country, String state,String city, String zipcode, String phoneNumber ){
+
+        actionDriver.scrollToElement(inpAddress1);
+        actionDriver.enterText(inpAddress1, address1);
+        actionDriver.enterText(inpAddress2, address2);
+
+        actionDriver.selectByVisibleText(selectCountry, country);
+
+        actionDriver.enterText(inpState, state);
+        actionDriver.enterText(inpCity, city);
+        actionDriver.enterText(inpZipcode, zipcode);
+        actionDriver.enterText(inpPhoneNumber, phoneNumber);
+
+        logger.info("user contact info added successfully.....");
+    }
+
+    public void clickOnCreateAccount(){
+        actionDriver.waitForElementToBeClickable(btnCreateAccount);
+        actionDriver.scrollToElement(btnCreateAccount);
+        actionDriver.click(btnCreateAccount);
+        logger.info("click on create account btn from signup....");
+    }
+
+    public String getSuccessMsgForAccountCreate(){
+        actionDriver.waitForElementToVisible(successMSGCreateAccount);
+        return actionDriver.getText(successMSGCreateAccount);
+    }
 
 
 }

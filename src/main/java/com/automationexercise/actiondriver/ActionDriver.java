@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.nio.file.Paths;
 import java.time.Duration;
@@ -138,7 +139,6 @@ public class ActionDriver {
     // remains
     public boolean isButtonEnabled(By buttonLocator) {
         try {
-            waitForElementToVisible(buttonLocator);
             WebElement button = wait.until(ExpectedConditions.visibilityOfElementLocated(buttonLocator));
             return button.isEnabled();   // true=enabled, false=disabled
         } catch (Exception e) {
@@ -228,9 +228,15 @@ public class ActionDriver {
     }
 
     public void jsClick(By locator) {
-        WebElement element = driver.findElement(locator);
+        WebElement element = waitForElementToBePresent(locator);
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", element);
+    }
+
+    public void selectByVisibleText(By locator, String value){
+        WebElement element = waitForElementToBeClickable(locator);
+        Select select = new Select(element);
+        select.selectByVisibleText(value);
     }
 
 
