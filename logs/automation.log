@@ -1,131 +1,80 @@
-2026-02-14 17:44:15.371 [main] INFO  Utils -  - [TestNG] Running:
+2026-02-21 18:20:22.451 [main] INFO  Utils -  - [TestNG] Running:
   C:\Users\AVINASH\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
 
-2026-02-14 17:44:15.584 [main] INFO  BaseTest -  - ===== Starting Test Setup | Thread: main | Test: verifyLoginWithValidCredential =====
-2026-02-14 17:44:15.624 [main] INFO  BaseTest -  - ===== Starting Test Teardown | Thread: main =====
-2026-02-14 17:44:15.631 [main] WARN  DriverFactory -  - Attempted to quit WebDriver, but it was null for thread: main
-2026-02-14 17:44:15.633 [main] INFO  BaseTest -  - WebDriver quit successfully
-2026-02-14 17:47:01.244 [main] INFO  Utils -  - [TestNG] Running:
+2026-02-21 18:20:22.521 [main] INFO  BaseTest -  - ===== Starting Test Setup | Thread: main | Test: verifyLoginWithInvalidTest =====
+2026-02-21 18:20:22.536 [main] INFO  BaseTest -  - Browser not provided via TestNG. Using config value: chrome
+2026-02-21 18:20:22.536 [main] INFO  DriverFactory -  - Initiating driver on for browser chrome on threadmain
+2026-02-21 18:20:29.621 [main] INFO  DriverManager -  - Chrome Driver Instance Is Created
+2026-02-21 18:20:29.621 [main] DEBUG DriverManager -  - Driver instance created successfully: ChromeDriver: chrome on windows (d8c1ed2813f5121c08446eb48858f709)
+2026-02-21 18:20:29.621 [main] DEBUG DriverFactory -  - WebDriver instance set in ThreadLocal for thread: main
+2026-02-21 18:20:29.621 [main] DEBUG BaseTest -  - WebDriver initialized successfully
+2026-02-21 18:20:29.621 [main] DEBUG ActionDriver -  - ActionDriver initialized with explicitWait=20 seconds
+2026-02-21 18:20:29.621 [main] DEBUG BaseTest -  - ActionDriver initialized
+2026-02-21 18:20:29.621 [main] INFO  BaseTest -  - Configuring browser settings
+2026-02-21 18:20:29.639 [main] DEBUG BaseTest -  - Implicit wait set to 2 seconds
+2026-02-21 18:20:29.675 [main] DEBUG BaseTest -  - Browser window maximized
+2026-02-21 18:20:41.408 [main] INFO  BaseTest -  - Navigated to URL: https://www.automationexercise.com/
+2026-02-21 18:20:41.408 [main] INFO  BaseTest -  - ===== @BeforeMethod completed =====
+2026-02-21 18:20:41.414 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //a[normalize-space()='Signup / Login']
+2026-02-21 18:20:41.485 [main] INFO  ActionDriver -  - Clicking element: By.xpath: //a[normalize-space()='Signup / Login']
+2026-02-21 18:20:41.485 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //a[normalize-space()='Signup / Login']
+2026-02-21 18:20:46.385 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //input[@data-qa='login-email']
+2026-02-21 18:20:46.413 [main] INFO  ActionDriver -  - Entering text into By.xpath: //input[@data-qa='login-email']
+2026-02-21 18:20:46.413 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //input[@data-qa='login-email']
+2026-02-21 18:20:46.531 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //input[@placeholder='Password']
+2026-02-21 18:20:46.559 [main] INFO  ActionDriver -  - Entering text into By.xpath: //input[@placeholder='Password']
+2026-02-21 18:20:46.559 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //input[@placeholder='Password']
+2026-02-21 18:20:46.664 [main] INFO  ActionDriver -  - Clicking element: By.xpath: //button[normalize-space()='Login']
+2026-02-21 18:20:46.664 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //button[normalize-space()='Login']
+2026-02-21 18:20:48.109 [main] DEBUG ActionDriver -  - Checking visibility for: By.xpath: //p[normalize-space()='Your email or password is incorrect!']
+2026-02-21 18:20:48.109 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //p[normalize-space()='Your email or password is incorrect!']
+2026-02-21 18:20:48.149 [main] INFO  LoginPage -  - The error message on login page is true
+2026-02-21 18:20:48.149 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //p[normalize-space()='Your email or password is incorrect!']
+2026-02-21 18:20:48.170 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //p[normalize-space()='Your email or password is incorrect!']
+2026-02-21 18:20:48.200 [main] DEBUG ActionDriver -  - Text retrieved from By.xpath: //p[normalize-space()='Your email or password is incorrect!']: Your email or password is incorrect!
+2026-02-21 18:20:48.206 [main] INFO  BaseTest -  - ===== Starting Test Teardown | Thread: main =====
+2026-02-21 18:20:48.206 [main] INFO  DriverFactory -  - Quitting WebDriver for thread: main
+2026-02-21 18:20:48.385 [main] DEBUG DriverFactory -  - WebDriver removed from ThreadLocal for thread: main
+2026-02-21 18:20:48.385 [main] INFO  BaseTest -  - WebDriver quit successfully
+2026-02-21 18:38:33.404 [main] INFO  Utils -  - [TestNG] Running:
   C:\Users\AVINASH\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
 
-2026-02-14 17:47:01.349 [main] INFO  BaseTest -  - ===== Starting Test Setup | Thread: main | Test: verifyLoginWithValidCredential =====
-2026-02-14 17:47:01.350 [main] INFO  BaseTest -  - Browser not provided via TestNG. Using config value: chrome
-2026-02-14 17:47:01.352 [main] INFO  DriverFactory -  - Initiating driver on for browser chrome on threadmain
-2026-02-14 17:47:35.206 [main] INFO  DriverManager -  - Chrome Driver Instance Is Created
-2026-02-14 17:47:35.207 [main] DEBUG DriverManager -  - Driver instance created successfully: ChromeDriver: chrome on windows (78f3650d12348d3bf87b7d6b8f0ec80d)
-2026-02-14 17:47:35.207 [main] DEBUG DriverFactory -  - WebDriver instance set in ThreadLocal for thread: main
-2026-02-14 17:47:35.207 [main] DEBUG BaseTest -  - WebDriver initialized successfully
-2026-02-14 17:47:35.227 [main] INFO  BaseTest -  - ===== Starting Test Teardown | Thread: main =====
-2026-02-14 17:47:35.227 [main] INFO  DriverFactory -  - Quitting WebDriver for thread: main
-2026-02-14 17:47:35.423 [main] DEBUG DriverFactory -  - WebDriver removed from ThreadLocal for thread: main
-2026-02-14 17:47:35.424 [main] INFO  BaseTest -  - WebDriver quit successfully
-2026-02-14 17:53:50.781 [main] INFO  Utils -  - [TestNG] Running:
-  C:\Users\AVINASH\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
-
-2026-02-14 17:53:50.882 [main] INFO  BaseTest -  - ===== Starting Test Setup | Thread: main | Test: verifyLoginWithValidCredential =====
-2026-02-14 17:53:50.882 [main] INFO  BaseTest -  - Browser not provided via TestNG. Using config value: chrome
-2026-02-14 17:53:50.886 [main] INFO  DriverFactory -  - Initiating driver on for browser chrome on threadmain
-2026-02-14 17:53:53.114 [main] INFO  DriverManager -  - Chrome Driver Instance Is Created
-2026-02-14 17:53:53.114 [main] DEBUG DriverManager -  - Driver instance created successfully: ChromeDriver: chrome on windows (1856ed1c62575d0e3c02a455285c5663)
-2026-02-14 17:53:53.118 [main] DEBUG DriverFactory -  - WebDriver instance set in ThreadLocal for thread: main
-2026-02-14 17:53:53.118 [main] DEBUG BaseTest -  - WebDriver initialized successfully
-2026-02-14 17:53:53.122 [main] DEBUG ActionDriver -  - ActionDriver initialized with explicitWait=20 seconds
-2026-02-14 17:53:53.122 [main] DEBUG BaseTest -  - ActionDriver initialized
-2026-02-14 17:53:53.122 [main] INFO  BaseTest -  - Configuring browser settings
-2026-02-14 17:53:53.130 [main] DEBUG BaseTest -  - Implicit wait set to 2 seconds
-2026-02-14 17:53:53.175 [main] DEBUG BaseTest -  - Browser window maximized
-2026-02-14 17:54:09.828 [main] INFO  BaseTest -  - Navigated to URL: https://www.automationexercise.com/
-2026-02-14 17:54:09.828 [main] INFO  BaseTest -  - ===== @BeforeMethod completed =====
-2026-02-14 17:54:09.840 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //input[@data-qa='login-email']
-2026-02-14 17:54:32.410 [main] ERROR ActionDriver -  - Element not clickable: By.xpath: //input[@data-qa='login-email']
-2026-02-14 17:54:32.437 [main] INFO  BaseTest -  - ===== Starting Test Teardown | Thread: main =====
-2026-02-14 17:54:32.437 [main] INFO  DriverFactory -  - Quitting WebDriver for thread: main
-2026-02-14 17:54:34.445 [main] DEBUG DriverFactory -  - WebDriver removed from ThreadLocal for thread: main
-2026-02-14 17:54:34.445 [main] INFO  BaseTest -  - WebDriver quit successfully
-2026-02-14 19:24:10.691 [main] INFO  Utils -  - [TestNG] Running:
-  C:\Users\AVINASH\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
-
-2026-02-14 19:24:10.750 [main] INFO  BaseTest -  - ===== Starting Test Setup | Thread: main | Test: verifyLoginWithValidCredential =====
-2026-02-14 19:24:10.753 [main] INFO  BaseTest -  - Browser not provided via TestNG. Using config value: chrome
-2026-02-14 19:24:10.756 [main] INFO  DriverFactory -  - Initiating driver on for browser chrome on threadmain
-2026-02-14 19:24:19.221 [main] INFO  DriverManager -  - Chrome Driver Instance Is Created
-2026-02-14 19:24:19.221 [main] DEBUG DriverManager -  - Driver instance created successfully: ChromeDriver: chrome on windows (b01d7027284ff57a5072709b9f960e9a)
-2026-02-14 19:24:19.221 [main] DEBUG DriverFactory -  - WebDriver instance set in ThreadLocal for thread: main
-2026-02-14 19:24:19.222 [main] DEBUG BaseTest -  - WebDriver initialized successfully
-2026-02-14 19:24:19.226 [main] DEBUG ActionDriver -  - ActionDriver initialized with explicitWait=20 seconds
-2026-02-14 19:24:19.226 [main] DEBUG BaseTest -  - ActionDriver initialized
-2026-02-14 19:24:19.226 [main] INFO  BaseTest -  - Configuring browser settings
-2026-02-14 19:24:19.234 [main] DEBUG BaseTest -  - Implicit wait set to 2 seconds
-2026-02-14 19:24:19.267 [main] DEBUG BaseTest -  - Browser window maximized
-2026-02-14 19:24:57.126 [main] INFO  BaseTest -  - Navigated to URL: https://www.automationexercise.com/
-2026-02-14 19:24:57.126 [main] INFO  BaseTest -  - ===== @BeforeMethod completed =====
-2026-02-14 19:24:57.141 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //input[@data-qa='login-email']
-2026-02-14 19:25:19.610 [main] ERROR ActionDriver -  - Element not clickable: By.xpath: //input[@data-qa='login-email']
-2026-02-14 19:25:19.621 [main] INFO  BaseTest -  - ===== Starting Test Teardown | Thread: main =====
-2026-02-14 19:25:19.621 [main] INFO  DriverFactory -  - Quitting WebDriver for thread: main
-2026-02-14 19:25:19.832 [main] DEBUG DriverFactory -  - WebDriver removed from ThreadLocal for thread: main
-2026-02-14 19:25:19.832 [main] INFO  BaseTest -  - WebDriver quit successfully
-2026-02-14 19:26:16.715 [main] INFO  Utils -  - [TestNG] Running:
-  C:\Users\AVINASH\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
-
-2026-02-14 19:26:16.770 [main] INFO  BaseTest -  - ===== Starting Test Setup | Thread: main | Test: verifyLoginWithValidCredential =====
-2026-02-14 19:26:16.770 [main] INFO  BaseTest -  - Browser not provided via TestNG. Using config value: chrome
-2026-02-14 19:26:16.775 [main] INFO  DriverFactory -  - Initiating driver on for browser chrome on threadmain
-2026-02-14 19:26:17.860 [main] INFO  DriverManager -  - Chrome Driver Instance Is Created
-2026-02-14 19:26:17.860 [main] DEBUG DriverManager -  - Driver instance created successfully: ChromeDriver: chrome on windows (75349f59031db2dc84e3bd25ddf6653d)
-2026-02-14 19:26:17.860 [main] DEBUG DriverFactory -  - WebDriver instance set in ThreadLocal for thread: main
-2026-02-14 19:26:17.860 [main] DEBUG BaseTest -  - WebDriver initialized successfully
-2026-02-14 19:26:17.860 [main] DEBUG ActionDriver -  - ActionDriver initialized with explicitWait=20 seconds
-2026-02-14 19:26:17.860 [main] DEBUG BaseTest -  - ActionDriver initialized
-2026-02-14 19:26:17.860 [main] INFO  BaseTest -  - Configuring browser settings
-2026-02-14 19:26:17.870 [main] DEBUG BaseTest -  - Implicit wait set to 2 seconds
-2026-02-14 19:26:17.918 [main] DEBUG BaseTest -  - Browser window maximized
-2026-02-14 19:26:34.550 [main] INFO  BaseTest -  - Navigated to URL: https://www.automationexercise.com/
-2026-02-14 19:26:34.550 [main] INFO  BaseTest -  - ===== @BeforeMethod completed =====
-2026-02-14 19:26:34.560 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //a[normalize-space()='Signup / Login']
-2026-02-14 19:26:34.610 [main] INFO  ActionDriver -  - Clicking element: By.xpath: //a[normalize-space()='Signup / Login']
-2026-02-14 19:26:34.610 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //a[normalize-space()='Signup / Login']
-2026-02-14 19:26:45.685 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //input[@data-qa='login-email']
-2026-02-14 19:26:45.709 [main] INFO  ActionDriver -  - Entering text into By.xpath: //input[@data-qa='login-email']
-2026-02-14 19:26:45.709 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //input[@data-qa='login-email']
-2026-02-14 19:26:45.792 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //input[@placeholder='Password']
-2026-02-14 19:26:45.810 [main] INFO  ActionDriver -  - Entering text into By.xpath: //input[@placeholder='Password']
-2026-02-14 19:26:45.810 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //input[@placeholder='Password']
-2026-02-14 19:26:45.868 [main] INFO  ActionDriver -  - Clicking element: By.xpath: //button[normalize-space()='Login']
-2026-02-14 19:26:45.868 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //button[normalize-space()='Login']
-2026-02-14 19:26:52.355 [main] INFO  BaseTest -  - ===== Starting Test Teardown | Thread: main =====
-2026-02-14 19:26:52.355 [main] INFO  DriverFactory -  - Quitting WebDriver for thread: main
-2026-02-14 19:26:52.551 [main] DEBUG DriverFactory -  - WebDriver removed from ThreadLocal for thread: main
-2026-02-14 19:26:52.551 [main] INFO  BaseTest -  - WebDriver quit successfully
-2026-02-14 19:29:02.406 [main] INFO  Utils -  - [TestNG] Running:
-  C:\Users\AVINASH\AppData\Local\JetBrains\IdeaIC2025.2\temp-testng-customsuite.xml
-
-2026-02-14 19:29:02.464 [main] INFO  BaseTest -  - ===== Starting Test Setup | Thread: main | Test: verifyLoginWithValidCredential =====
-2026-02-14 19:29:02.466 [main] INFO  BaseTest -  - Browser not provided via TestNG. Using config value: chrome
-2026-02-14 19:29:02.467 [main] INFO  DriverFactory -  - Initiating driver on for browser chrome on threadmain
-2026-02-14 19:29:03.514 [main] INFO  DriverManager -  - Chrome Driver Instance Is Created
-2026-02-14 19:29:03.514 [main] DEBUG DriverManager -  - Driver instance created successfully: ChromeDriver: chrome on windows (21f481732c9f490422eebd1835c36e22)
-2026-02-14 19:29:03.515 [main] DEBUG DriverFactory -  - WebDriver instance set in ThreadLocal for thread: main
-2026-02-14 19:29:03.515 [main] DEBUG BaseTest -  - WebDriver initialized successfully
-2026-02-14 19:29:03.517 [main] DEBUG ActionDriver -  - ActionDriver initialized with explicitWait=20 seconds
-2026-02-14 19:29:03.517 [main] DEBUG BaseTest -  - ActionDriver initialized
-2026-02-14 19:29:03.517 [main] INFO  BaseTest -  - Configuring browser settings
-2026-02-14 19:29:03.522 [main] DEBUG BaseTest -  - Implicit wait set to 2 seconds
-2026-02-14 19:29:03.556 [main] DEBUG BaseTest -  - Browser window maximized
-2026-02-14 19:29:20.187 [main] INFO  BaseTest -  - Navigated to URL: https://www.automationexercise.com/
-2026-02-14 19:29:20.188 [main] INFO  BaseTest -  - ===== @BeforeMethod completed =====
-2026-02-14 19:29:20.190 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //a[normalize-space()='Signup / Login']
-2026-02-14 19:29:20.223 [main] INFO  ActionDriver -  - Clicking element: By.xpath: //a[normalize-space()='Signup / Login']
-2026-02-14 19:29:20.226 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //a[normalize-space()='Signup / Login']
-2026-02-14 19:29:27.223 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //input[@data-qa='login-email']
-2026-02-14 19:29:27.249 [main] INFO  ActionDriver -  - Entering text into By.xpath: //input[@data-qa='login-email']
-2026-02-14 19:29:27.249 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //input[@data-qa='login-email']
-2026-02-14 19:29:27.332 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //input[@placeholder='Password']
-2026-02-14 19:29:27.353 [main] INFO  ActionDriver -  - Entering text into By.xpath: //input[@placeholder='Password']
-2026-02-14 19:29:27.353 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //input[@placeholder='Password']
-2026-02-14 19:29:27.414 [main] INFO  ActionDriver -  - Clicking element: By.xpath: //button[normalize-space()='Login']
-2026-02-14 19:29:27.414 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //button[normalize-space()='Login']
-2026-02-14 19:29:44.672 [main] INFO  BaseTest -  - ===== Starting Test Teardown | Thread: main =====
-2026-02-14 19:29:44.672 [main] INFO  DriverFactory -  - Quitting WebDriver for thread: main
-2026-02-14 19:29:44.840 [main] DEBUG DriverFactory -  - WebDriver removed from ThreadLocal for thread: main
-2026-02-14 19:29:44.840 [main] INFO  BaseTest -  - WebDriver quit successfully
+2026-02-21 18:38:33.479 [main] INFO  BaseTest -  - ===== Starting Test Setup | Thread: main | Test: verifyLoginWithValidCredential =====
+2026-02-21 18:38:33.481 [main] INFO  BaseTest -  - Browser not provided via TestNG. Using config value: chrome
+2026-02-21 18:38:33.484 [main] INFO  DriverFactory -  - Initiating driver on for browser chrome on threadmain
+2026-02-21 18:38:35.144 [main] INFO  DriverManager -  - Chrome Driver Instance Is Created
+2026-02-21 18:38:35.144 [main] DEBUG DriverManager -  - Driver instance created successfully: ChromeDriver: chrome on windows (ffd0f7e2bdf048483f1b3bd9e026b8de)
+2026-02-21 18:38:35.145 [main] DEBUG DriverFactory -  - WebDriver instance set in ThreadLocal for thread: main
+2026-02-21 18:38:35.145 [main] DEBUG BaseTest -  - WebDriver initialized successfully
+2026-02-21 18:38:35.148 [main] DEBUG ActionDriver -  - ActionDriver initialized with explicitWait=20 seconds
+2026-02-21 18:38:35.148 [main] DEBUG BaseTest -  - ActionDriver initialized
+2026-02-21 18:38:35.148 [main] INFO  BaseTest -  - Configuring browser settings
+2026-02-21 18:38:35.153 [main] DEBUG BaseTest -  - Implicit wait set to 2 seconds
+2026-02-21 18:38:35.189 [main] DEBUG BaseTest -  - Browser window maximized
+2026-02-21 18:38:42.008 [main] INFO  BaseTest -  - Navigated to URL: https://www.automationexercise.com/
+2026-02-21 18:38:42.008 [main] INFO  BaseTest -  - ===== @BeforeMethod completed =====
+2026-02-21 18:38:42.014 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //a[normalize-space()='Signup / Login']
+2026-02-21 18:38:42.069 [main] INFO  ActionDriver -  - Clicking element: By.xpath: //a[normalize-space()='Signup / Login']
+2026-02-21 18:38:42.069 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //a[normalize-space()='Signup / Login']
+2026-02-21 18:38:46.743 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //input[@data-qa='login-email']
+2026-02-21 18:38:46.777 [main] INFO  ActionDriver -  - Entering text into By.xpath: //input[@data-qa='login-email']
+2026-02-21 18:38:46.777 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //input[@data-qa='login-email']
+2026-02-21 18:38:46.894 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //input[@placeholder='Password']
+2026-02-21 18:38:46.926 [main] INFO  ActionDriver -  - Entering text into By.xpath: //input[@placeholder='Password']
+2026-02-21 18:38:46.926 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //input[@placeholder='Password']
+2026-02-21 18:38:47.019 [main] INFO  ActionDriver -  - Clicking element: By.xpath: //button[normalize-space()='Login']
+2026-02-21 18:38:47.019 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //button[normalize-space()='Login']
+2026-02-21 18:38:54.541 [main] INFO  LoginPage -  - Clicked on Login Button
+2026-02-21 18:38:54.548 [main] DEBUG ActionDriver -  - Checking visibility for: By.xpath: //ul[@class='nav navbar-nav']//b
+2026-02-21 18:38:54.548 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //ul[@class='nav navbar-nav']//b
+2026-02-21 18:38:54.582 [main] INFO  LoginPage -  - User name displayed after login
+2026-02-21 18:38:54.582 [main] DEBUG ActionDriver -  - Waiting for visibility of: By.xpath: //ul[@class='nav navbar-nav']//b
+2026-02-21 18:38:54.623 [main] DEBUG ActionDriver -  - Text retrieved from By.xpath: //ul[@class='nav navbar-nav']//b: David Hopper
+2026-02-21 18:38:54.623 [main] INFO  LoginPageTest -  - Performing logout after Login 
+2026-02-21 18:38:54.637 [main] INFO  ActionDriver -  - Clicking element: By.xpath: //a[normalize-space()='Logout']
+2026-02-21 18:38:54.638 [main] DEBUG ActionDriver -  - Waiting for element to be clickable: By.xpath: //a[normalize-space()='Logout']
+2026-02-21 18:38:57.749 [main] INFO  LoginPage -  - User Click on Logout Link
+2026-02-21 18:38:57.754 [main] INFO  BaseTest -  - ===== Starting Test Teardown | Thread: main =====
+2026-02-21 18:38:57.754 [main] INFO  DriverFactory -  - Quitting WebDriver for thread: main
+2026-02-21 18:38:57.994 [main] DEBUG DriverFactory -  - WebDriver removed from ThreadLocal for thread: main
+2026-02-21 18:38:57.994 [main] INFO  BaseTest -  - WebDriver quit successfully

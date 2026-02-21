@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 
 public class HomePage {
 
-
     private final ActionDriver actionDriver ;
 
     private static final Logger logger = LogManager.getLogger(HomePage.class);
@@ -21,11 +20,6 @@ public class HomePage {
     // login and sign up page locator
     private final By lnkSigningAndSignup = By.xpath("//a[normalize-space()='Signup / Login']");
     private final By logo = By.xpath("//img[@alt='Website for automation practice']");
-
-
-
-
-
 
     public void clickOnLoginAndSignup(){
         actionDriver.waitForElementToBeClickable(lnkSigningAndSignup);

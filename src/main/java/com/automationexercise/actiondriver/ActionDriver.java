@@ -111,7 +111,7 @@ public class ActionDriver {
 
     //Navigate Back form browser
     public void navigateToBack(){
-        DriverFactory.getDriver().navigate().back();
+        this.driver.navigate().back();
     }
 
     //Method to Click an element using locator
